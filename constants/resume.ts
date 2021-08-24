@@ -55,7 +55,11 @@ const Resume = {
   awards: [
     {
       title: "Jedi Knight for versatile performance",
-      issuer: "Innoplexus consulting pvt. ltd",
+      issuer: "Innoplexus Consulting Services Pvt Ltd",
+    },
+    {
+      title: "Mentored in PyCamp 2K17",
+      issuer: "PyCamp 2K17 - Nagpur",
     },
   ],
 };
