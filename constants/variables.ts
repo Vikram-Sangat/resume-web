@@ -1,0 +1,10 @@
+export const PROFILE =
+  "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=500";
+export const GITHUB =
+  "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=500";
+export const CAREER_START_DATE = new Date(2016, 6, 1);
+export const PRIMARY_COLOR = "#35baf6";
+export const PRIMARY_COLOR_LIGHT = "#b3e5fc";
+export const PRIMARY_COLOR_DARK = "#03a9f4";
+export const PRIMARY_COLOR_DARKER = "#0276aa";
+export const PRIMARY_FONT = "Lato";
