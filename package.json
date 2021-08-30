@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export":"next export",
     "start": "next start",
     "lint": "next lint",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx . --fix"
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@types/date-fns": "^2.6.0",
+    "@types/lodash-es": "^4.17.4",
     "@types/react": "17.0.19",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",

@@ -1,5 +1,4 @@
-export const PROFILE =
-  "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=500";
+export const PROFILE = "/profile.jpeg";
 export const GITHUB =
   "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=500";
 export const CAREER_START_DATE = new Date(2016, 6, 1);
