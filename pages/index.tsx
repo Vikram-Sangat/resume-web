@@ -2,13 +2,12 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import App from "../app";
 import Resume from "../constants/resume";
+import { GITHUB, TITLE, URL } from "../constants/variables";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Vikram Sangat - Resume</title>
-        <meta name="description" content={Resume.description} />
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -82,6 +81,22 @@ const Home: NextPage = () => {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
+
+        <title>{TITLE}</title>
+        <meta name="title" content={TITLE} />
+        <meta name="description" content={Resume.description} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={URL} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={Resume.description} />
+        <meta property="og:image" content={GITHUB} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={URL} />
+        <meta property="twitter:title" content={TITLE} />
+        <meta property="twitter:description" content={Resume.description} />
+        <meta property="twitter:image" content={GITHUB} />
       </Head>
 
       <main>

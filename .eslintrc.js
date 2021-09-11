@@ -26,12 +26,16 @@ module.exports = {
   },
   rules: {
     // Include .prettierrc.js rules
-    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+    "prettier/prettier": [
+      "error",
+      {},
+      { usePrettierrc: true, endOfLine: "auto" },
+    ],
     // We will use TypeScript's types for component props instead
     "react/prop-types": "off",
     // We don't want unused vars
-    "@typescript-eslint/no-unused-vars": ["error"],
-    "react/jsx-props-no-spreading": "off",  
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
   },

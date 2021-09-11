@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export":"next export",
+    "export": "next export",
     "start": "next start",
+    "server":"serve out",
     "lint": "next lint",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx . --fix"
   },
@@ -37,6 +38,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.2",
+    "serve": "^12.0.1",
     "typescript": "4.3.5"
   }
 }
