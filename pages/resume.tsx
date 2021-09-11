@@ -1,11 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from "next";
 import Head from "next/head";
-import App from "../app";
 import Resume from "../constants/resume";
+import styles from "../styles/Resume.module.css";
+import App from "../app";
 
-const Home: NextPage = () => {
+const ResumePage: NextPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Vikram Sangat - Resume</title>
         <meta name="description" content={Resume.description} />
@@ -84,11 +86,11 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <main>
+      <main className={styles.main}>
         <App />
       </main>
     </div>
   );
 };
 
-export default Home;
+export default ResumePage;

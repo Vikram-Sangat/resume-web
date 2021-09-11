@@ -4,6 +4,7 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../constants/theme";
+import "../styles/globals.css";
 
 const MyApp: React.FC = (props: any) => {
   const { Component, pageProps } = props;
