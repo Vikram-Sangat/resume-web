@@ -1,16 +1,18 @@
 import React from "react";
-import { WithStyles } from "@material-ui/core";
+import { Typography, WithStyles } from "@material-ui/core";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
-import Page from "../Page";
-import Header from "../Header";
+import ExternalLinks from "../ExternalLinks";
+import Resume from "../../constants/resume";
 
 type Props = WithStyles<typeof style>;
 const Container: React.FC<Props> = ({ classes }) => {
   return (
     <span className={classes.root}>
-      <Header />
-      <Page />
+      <Typography className={classes.title}>
+        {Resume.name}
+        <ExternalLinks />
+      </Typography>
     </span>
   );
 };

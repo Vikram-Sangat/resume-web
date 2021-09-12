@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import App from "../app";
 import Resume from "../constants/resume";
-import { GITHUB, TITLE, URL } from "../constants/variables";
+import { GRAVATAR, TITLE, URL } from "../constants/variables";
 
 const Home: NextPage = () => {
   return (
@@ -90,13 +90,13 @@ const Home: NextPage = () => {
         <meta property="og:url" content={URL} />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={Resume.description} />
-        <meta property="og:image" content={GITHUB} />
+        <meta property="og:image" content={GRAVATAR} />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={URL} />
         <meta property="twitter:title" content={TITLE} />
         <meta property="twitter:description" content={Resume.description} />
-        <meta property="twitter:image" content={GITHUB} />
+        <meta property="twitter:image" content={GRAVATAR} />
       </Head>
 
       <main>

@@ -5,6 +5,6 @@ import { withStyleComponent } from "../../utils/style";
 
 type Props = WithStyles<typeof style>;
 const Page: React.FC<Props> = ({ classes }) => {
-  return <span className={classes.root}>Page</span>;
+  return <span className={classes.root}></span>;
 };
 export default withStyleComponent(style, "Container")(Page);

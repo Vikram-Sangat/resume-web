@@ -3,14 +3,14 @@ import { withStyles } from "@material-ui/core";
 export const withStyleComponent = (style: any, name: string) => {
   return withStyles(style, { name });
 };
-type ToPT =
+export type ToPT =
   | ((value: number) => string)
   | ((top: number, right?: number) => string)
   | ((top: number, right?: number, bottom?: number) => string)
   | ((top: number, right?: number, bottom?: number, left?: number) => string);
 
 const convert = (number = 0) => {
-  return `${number}pt`;
+  return `${number * 8}pt`;
 };
 
 const convertIn = (number = 0) => {
