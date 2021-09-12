@@ -11,7 +11,6 @@ const Header: React.FC<Props> = ({ classes }) => {
     <div className={classes.root}>
       <IntroHero />
       <ContactDetails />
-      <hr />
     </div>
   );
 };

@@ -3,8 +3,10 @@ import { WithStyles } from "@material-ui/core";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 
-type Props = WithStyles<typeof style>;
-const Page: React.FC<Props> = ({ classes }) => {
-  return <span className={classes.root}></span>;
+interface Props extends WithStyles<typeof style> {
+  children: React.ReactNode;
+}
+const Page: React.FC<Props> = ({ classes, children }) => {
+  return <div className={classes.root}>{children}</div>;
 };
 export default withStyleComponent(style, "Container")(Page);

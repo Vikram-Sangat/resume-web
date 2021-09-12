@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import App from "../app";
-import Resume from "../constants/resume";
+import { Resume } from "../constants/resume";
 import { GRAVATAR, TITLE, URL } from "../constants/variables";
 
 const Home: NextPage = () => {

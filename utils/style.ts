@@ -14,7 +14,7 @@ const convert = (number = 0) => {
 };
 
 const convertIn = (number = 0) => {
-  return `${number}pt`;
+  return `${number * 8}in`;
 };
 
 export const toPt: ToPT = (

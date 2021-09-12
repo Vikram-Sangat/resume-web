@@ -13,11 +13,9 @@ const style = (theme: Theme) =>
         fontSize: PAGE_FONT_SIZE,
         "@media print": {
           width: PAGE_WIDTH,
-          padding: PAGE_PADDING_PT,
-          disply: "block",
+          display: "block",
           fontSize: PAGE_FONT_SIZE,
           minHeight: PAGE_HEIGHT,
-          backgroundColor: "grey",
           margin: 0,
         },
       },

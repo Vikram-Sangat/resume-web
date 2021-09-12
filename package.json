@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "start": "next start",
+    "start": "next dev",
+    "bundle": "npm run build && npm run build export",
     "server": "serve out",
     "lint": "next lint",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx . --fix"

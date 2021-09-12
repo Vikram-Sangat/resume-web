@@ -4,7 +4,10 @@ const style = (theme: Theme) =>
   createStyles({
     root: {
       display: "block",
-      width: "100vw",
+      minWidth: "100%",
+      paddingBottom: theme.toPt(1),
+      marginBottom: theme.toPt(1),
+      borderBottom: "2px solid black",
     },
   });
 

@@ -3,7 +3,7 @@ import { Typography, WithStyles } from "@material-ui/core";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import ExternalLinks from "../ExternalLinks";
-import Resume from "../../constants/resume";
+import { Resume } from "../../constants/resume";
 
 type Props = WithStyles<typeof style>;
 const Container: React.FC<Props> = ({ classes }) => {

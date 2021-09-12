@@ -17,5 +17,5 @@ export const PRIMARY_COLOR_DARKER = "#0276aa";
 export const PRIMARY_FONT = "Lato";
 export const PAGE_WIDTH = toIn(8.3 / 8);
 export const PAGE_HEIGHT = toIn(11.7 / 8);
-export const PAGE_PADDING_PT = toPt(2);
+export const PAGE_PADDING_PT = toPt(3);
 export const PAGE_FONT_SIZE = toPt(1);
