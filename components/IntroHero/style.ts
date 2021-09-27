@@ -8,6 +8,14 @@ const style = (theme: Theme) =>
       position: "relative",
       textAlign: "center",
     },
+    img: {
+      position: "absolute",
+      left: 16,
+      width: theme.toPt(60),
+      "@media print": {
+        display: "none",
+      },
+    },
   });
 
 export default style;

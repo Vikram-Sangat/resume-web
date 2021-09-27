@@ -2,7 +2,21 @@ import { createStyles, Theme } from "@material-ui/core";
 
 const style = (theme: Theme) =>
   createStyles({
-    root: {
+    root: {},
+    section: {
+      width: "25%",
+      display: "inline-block",
+      padingRight: theme.spacing(1),
+      "& ul": {
+        margin: 0,
+        listStylePosition: "inside",
+        paddingLeft: 0,
+      },
+      "& li": {
+        margin: 0,
+        float: "left",
+        marginRight: theme.spacing(0.5),
+      },
       clear: "both",
       "& header": {
         fontWeight: "700",
@@ -13,21 +27,6 @@ const style = (theme: Theme) =>
         display: "block",
         height: "0",
         clear: "both",
-      },
-    },
-    section: {
-      width: "23%",
-      display: "inline-block",
-      marginRight: theme.spacing(1),
-      "& ul": {
-        margin: 0,
-        listStylePosition: "inside",
-        paddingLeft: 0,
-      },
-      "& li": {
-        margin: 0,
-        float: "left",
-        marginRight: theme.spacing(0.5),
       },
     },
   });

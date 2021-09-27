@@ -1,5 +1,6 @@
 import React from "react";
 import { WithStyles } from "@material-ui/core";
+import clsx from "clsx";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import SectionHeader from "../SectionHeader";
@@ -14,13 +15,24 @@ const Overview: React.FC<Props> = ({ classes }) => {
       <SectionHeader>Experience</SectionHeader>
       <SectionBody>
         <div>
-          {Resume.experience.map((p) => (
-            <div key={p.title} className={classes.details}>
+          {Resume.experience.map((p, i) => (
+            <div
+              key={p.title}
+              className={clsx(classes.details, {
+                [classes.lastDetail]: i === Resume.experience.length - 1,
+              })}
+            >
               <span className={classes.title}>{p.title}</span>
               <div>
                 <span className={classes.company}>{p.company}</span> -{" "}
                 <span className={classes.area}>{p.area}</span>
-                <span className={classes.duration}>{calculateDuration(p)}</span>
+                <span
+                  className={clsx(classes.duration, {
+                    [classes.lastDuration]: i === Resume.experience.length - 1,
+                  })}
+                >
+                  {calculateDuration(p)}
+                </span>
               </div>
               <ul>
                 {p.tasks.map((t) => (

@@ -16,7 +16,7 @@ import Page from "../Page";
 type Props = WithStyles<typeof style>;
 const Container: React.FC<Props> = ({ classes }) => {
   return (
-    <span className={classes.root}>
+    <div className={classes.root}>
       <Page>
         <Header />
         <Overview />
@@ -28,7 +28,7 @@ const Container: React.FC<Props> = ({ classes }) => {
         <Achivement />
         <Education />
       </Page>
-    </span>
+    </div>
   );
 };
 export default withStyleComponent(style, "Container")(Container);

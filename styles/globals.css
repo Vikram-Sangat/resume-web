@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@media print {
+  @page {
+    size: auto;
+    margin: 0.5in 0.5in 0.5in 0.5in;
+    mso-header-margin: 0.5in;
+    mso-footer-margin: 0.5in;
+    mso-paper-source: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}

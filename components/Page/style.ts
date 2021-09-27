@@ -13,7 +13,7 @@ const style = (theme: Theme) =>
       "@media print": {
         width: PAGE_WIDTH,
         padding: PAGE_PADDING_PT,
-        paddingBottom: theme.toIn(3),
+        paddingBottom: theme.toPt(3),
         display: "block",
         fontSize: PAGE_FONT_SIZE,
         minHeight: PAGE_HEIGHT,

@@ -16,6 +16,7 @@ const style = (theme: Theme) =>
     details: {
       position: "relative",
       pageBreakBefore: "auto",
+      pageBreakAfter: "auto",
       marginBottom: theme.spacing(1),
       paddingBottom: theme.spacing(1),
       "& small": {
@@ -41,6 +42,16 @@ const style = (theme: Theme) =>
     area: {
       fontSize: theme.toPt(10 / 8),
       fontWeight: 700,
+    },
+    lastDetail: {
+      "@media print": {
+        paddingTop: theme.toPt(4),
+      },
+    },
+    lastDuration: {
+      "@media print": {
+        top: `calc(${theme.toPt(4)} - 4px)`,
+      },
     },
   });
 
