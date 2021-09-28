@@ -10,14 +10,14 @@ type Props = WithStyles<typeof style>;
 const Container: React.FC<Props> = ({ classes }) => {
   return (
     <div className={classes.root}>
-      <Box className={classes.img}>
+      <div className={classes.img}>
         <Image
           src="/apple-icon-180x180.png"
           alt="hero"
           width={100}
           height={100}
         />{" "}
-      </Box>
+      </div>
       <Typography className={classes.title}>
         {Resume.name}
         <ExternalLinks />

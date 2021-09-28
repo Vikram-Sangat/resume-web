@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "stardev": "next start",
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "start": "next dev",
-    "bundle": "npm run build && npm run build export",
+    "bundle": "npm run build && npm run export",
     "server": "serve out",
     "lint": "next lint",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx . --fix"

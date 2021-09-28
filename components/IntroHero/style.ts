@@ -11,7 +11,7 @@ const style = (theme: Theme) =>
     img: {
       position: "absolute",
       left: 16,
-      width: theme.toPt(60),
+      width: 50,
       "@media print": {
         display: "none",
       },
