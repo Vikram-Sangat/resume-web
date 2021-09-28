@@ -1,11 +1,6 @@
 export function getStrapiURL(path = "") {
-  console.log(
-    "process.env.NEXT_PUBLIC_STRAPI_API_UR",
-    process.env.NEXT_PUBLIC_STRAPI_API_URL
-  );
-  return `${
-    process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
-  }${path}`;
+  const { STRAPI_API_URL = null } = process.env;
+  return `${STRAPI_API_URL || "http://localhost:1337"}${path}`;
 }
 
 // Helper to make GET requests to Strapi
