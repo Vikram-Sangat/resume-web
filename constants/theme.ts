@@ -17,10 +17,10 @@ declare module "@material-ui/core/styles/createTheme" {
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#556cd6",
+      main: "#2C27C7",
     },
     secondary: {
-      main: "#19857b",
+      main: "#1EFAE4",
     },
     error: {
       main: red.A400,
