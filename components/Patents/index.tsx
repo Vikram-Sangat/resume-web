@@ -3,8 +3,11 @@ import { WithStyles } from "@material-ui/core";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import SectionHeader from "../SectionHeader";
+import BulletList from "../BulletList";
+import Bullet from "../Bullet";
 import SectionBody from "../SectionBody";
 import { Resume } from "../../constants/resume";
+import Link from "../Link";
 
 type Props = WithStyles<typeof style>;
 const Overview: React.FC<Props> = ({ classes }) => {
@@ -12,16 +15,16 @@ const Overview: React.FC<Props> = ({ classes }) => {
     <div className={classes.root}>
       <SectionHeader>Patents</SectionHeader>
       <SectionBody>
-        <ul>
+        <BulletList>
           {Resume.patents.map((p) => (
-            <li key={p.link}>
+            <Bullet key={p.link}>
               {p.title} -{" "}
-              <a href={p.url} target="__blank" title={p.title}>
-                <u>{p.link}</u>
-              </a>
-            </li>
+              <Link href={p.url} underline external>
+                {p.link}
+              </Link>
+            </Bullet>
           ))}
-        </ul>
+        </BulletList>
       </SectionBody>
     </div>
   );

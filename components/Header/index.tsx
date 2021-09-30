@@ -4,6 +4,7 @@ import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import ContactDetails from "../ContactDetails";
 import IntroHero from "../IntroHero";
+import ExternalLinks from "../ExternalLinks";
 
 type Props = WithStyles<typeof style>;
 const Header: React.FC<Props> = ({ classes }) => {
@@ -11,6 +12,7 @@ const Header: React.FC<Props> = ({ classes }) => {
     <div className={classes.root}>
       <IntroHero />
       <ContactDetails />
+      <ExternalLinks />
     </div>
   );
 };

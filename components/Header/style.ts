@@ -4,6 +4,7 @@ const style = (theme: Theme) =>
   createStyles({
     root: {
       display: "block",
+      position: "relative",
       minWidth: "100%",
       paddingBottom: theme.toPt(1),
       marginBottom: theme.toPt(1),

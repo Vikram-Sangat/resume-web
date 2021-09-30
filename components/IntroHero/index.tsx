@@ -3,7 +3,6 @@ import { Typography, WithStyles, Box } from "@material-ui/core";
 import Image from "next/image";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
-import ExternalLinks from "../ExternalLinks";
 import { Resume } from "../../constants/resume";
 
 type Props = WithStyles<typeof style>;
@@ -18,10 +17,7 @@ const Container: React.FC<Props> = ({ classes }) => {
           height={100}
         />{" "}
       </div>
-      <Typography className={classes.title}>
-        {Resume.name}
-        <ExternalLinks />
-      </Typography>
+      <Typography className={classes.title}>{Resume.name}</Typography>
     </div>
   );
 };

@@ -7,6 +7,10 @@ const style = (theme: Theme) =>
       fontSize: theme.toPt(2.5),
       position: "relative",
       textAlign: "center",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: theme.toPt(3),
+        textAlign: "left",
+      },
     },
     img: {
       position: "absolute",
@@ -14,6 +18,10 @@ const style = (theme: Theme) =>
       width: 50,
       "@media print": {
         display: "none",
+      },
+      [theme.breakpoints.down("sm")]: {
+        right: 16,
+        left: "unset",
       },
     },
   });

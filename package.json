@@ -25,12 +25,15 @@
     "prop-types": "^15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-span": "0.0.1"
+    "react-span": "^0.1.2",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@types/date-fns": "^2.6.0",
     "@types/lodash-es": "^4.17.4",
     "@types/react": "17.0.19",
+    "@types/styled-components": "^5.1.14",
+    "@types/styled-system": "^5.1.13",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
     "eslint": "7.32.0",
