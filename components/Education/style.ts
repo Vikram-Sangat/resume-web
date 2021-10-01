@@ -12,9 +12,7 @@ const style = (theme: Theme) =>
         margin: 0,
         paddingBottom: 8,
       },
-      "& div": {
-        marginLeft: theme.spacing(13 / 8),
-      },
+      "& div": {},
     },
   });
 

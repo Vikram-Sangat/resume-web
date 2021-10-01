@@ -38,6 +38,11 @@ const style = (theme: Theme) =>
       top: 4,
       right: 0,
       fontWeight: 700,
+      [theme.breakpoints.down("xs")]: {
+        position: "relative",
+        display: "block",
+        marginBottom: theme.spacing(1),
+      },
     },
     area: {
       fontSize: theme.toPt(10 / 8),

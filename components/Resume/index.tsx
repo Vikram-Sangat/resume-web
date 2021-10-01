@@ -13,12 +13,12 @@ import Achivement from "../Achivement";
 import Education from "../Education";
 import Page from "../Page";
 
-type Props = WithStyles<typeof style>;
-const Container: React.FC<Props> = ({ classes }) => {
+type Props = WithStyles<typeof style> | Record<string, any>;
+const Container: React.FC<Props> = ({ classes, global }) => {
   return (
     <div className={classes.root}>
       <Page>
-        <Header />
+        <Header global={global} />
         <Overview />
         <Patents />
         <Skills />

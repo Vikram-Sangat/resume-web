@@ -8,6 +8,9 @@ import SectionHeader from "../SectionHeader";
 import SectionBody from "../SectionBody";
 import { Resume } from "../../constants/resume";
 import { calculateDuration } from "../../constants/date";
+import Bullet from "../Bullet";
+import BulletList from "../BulletList";
+import Link from "../Link";
 
 type Props = WithStyles<typeof style>;
 const Overview: React.FC<Props> = ({ classes }) => {
@@ -18,22 +21,23 @@ const Overview: React.FC<Props> = ({ classes }) => {
         <div>
           {Resume.projects.map((p) => (
             <div key={p.title} className={classes.details}>
-              <span className={classes.title}>
-                <u>
-                  <a href={p.link} target="__blank" title={p.title}>
-                    {p.title}
-                    <Launch />
-                  </a>
-                </u>
-              </span>
+              <Link
+                className={classes.title}
+                href={p.link}
+                title={p.title}
+                underline
+                external
+              >
+                {p.title}
+              </Link>
               <div>
                 <span className={classes.company}>{p.company}</span>
               </div>
-              <ul>
+              <BulletList>
                 {p.tasks.map((t) => (
-                  <li key={t}>{t}</li>
+                  <Bullet key={t}>{t}</Bullet>
                 ))}
-              </ul>
+              </BulletList>
               <small>
                 Technologies used : <strong>{p.techStack.join(", ")}</strong>{" "}
               </small>

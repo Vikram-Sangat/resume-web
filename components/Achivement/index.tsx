@@ -5,23 +5,25 @@ import { withStyleComponent } from "../../utils/style";
 import SectionHeader from "../SectionHeader";
 import SectionBody from "../SectionBody";
 import { Resume } from "../../constants/resume";
+import Bullet from "../Bullet";
+import BulletList from "../BulletList";
 
 type Props = WithStyles<typeof style>;
 const Overview: React.FC<Props> = ({ classes }) => {
   return (
     <div className={classes.root}>
-      <SectionHeader>Achivements</SectionHeader>
+      <SectionHeader>Achievements</SectionHeader>
       <SectionBody>
-        <ul>
+        <BulletList>
           {Resume.awards.map((p) => (
-            <li key={p.title}>
+            <Bullet key={p.title}>
               {p.title} -{" "}
               <small>
                 <i>{p.issuer}</i>
               </small>
-            </li>
+            </Bullet>
           ))}
-        </ul>
+        </BulletList>
       </SectionBody>
     </div>
   );

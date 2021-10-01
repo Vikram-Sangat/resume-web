@@ -20,7 +20,7 @@ const Overview: React.FC<Props> = ({ classes }) => {
             <Bullet key={p.link}>
               {p.title} -{" "}
               <Link href={p.url} underline external>
-                {p.link}
+                <strong>{p.link}</strong>
               </Link>
             </Bullet>
           ))}

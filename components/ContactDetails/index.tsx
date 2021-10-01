@@ -12,7 +12,7 @@ const Container: React.FC<Props> = ({ classes }) => {
     <div className={classes.root}>
       <a href={`tel:${Resume.mobile}`} title="Contact Vikram">
         <Phone className={classes.icon} /> {Resume.mobile}
-      </a>{" "}
+      </a>
       <span>
         <Hidden smDown>
           <span>-</span>{" "}

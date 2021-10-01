@@ -11,7 +11,7 @@ const Overview: React.FC<Props> = ({ classes }) => {
   return (
     <div className={classes.root}>
       <SectionHeader>Skills</SectionHeader>
-      <SectionBody>
+      <SectionBody classes={{ root: classes.body }}>
         <div className={classes.section}>
           <header> Languages </header>
           <ul>

@@ -7,6 +7,8 @@ import SectionHeader from "../SectionHeader";
 import SectionBody from "../SectionBody";
 import { Resume } from "../../constants/resume";
 import { calculateDuration } from "../../constants/date";
+import BulletList from "../BulletList";
+import Bullet from "../Bullet";
 
 type Props = WithStyles<typeof style>;
 const Overview: React.FC<Props> = ({ classes }) => {
@@ -34,11 +36,11 @@ const Overview: React.FC<Props> = ({ classes }) => {
                   {calculateDuration(p)}
                 </span>
               </div>
-              <ul>
+              <BulletList>
                 {p.tasks.map((t) => (
-                  <li key={t}>{t}</li>
+                  <Bullet key={t}>{t}</Bullet>
                 ))}
-              </ul>
+              </BulletList>
               <small>
                 Technologies used : <strong>{p.techStack.join(", ")}</strong>{" "}
               </small>

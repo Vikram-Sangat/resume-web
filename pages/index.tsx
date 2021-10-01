@@ -33,7 +33,7 @@ const Home: NextPage<Props> = ({ global }) => {
       </Head>
 
       <main>
-        <App />
+        <App global={global} />
       </main>
     </div>
   );

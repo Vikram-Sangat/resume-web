@@ -5,6 +5,9 @@ import { withStyleComponent } from "../../utils/style";
 import SectionHeader from "../SectionHeader";
 import SectionBody from "../SectionBody";
 import { Resume } from "../../constants/resume";
+import BulletList from "../BulletList";
+import Bullet from "../Bullet";
+import Link from "../Link";
 
 type Props = WithStyles<typeof style>;
 const Overview: React.FC<Props> = ({ classes }) => {
@@ -12,18 +15,16 @@ const Overview: React.FC<Props> = ({ classes }) => {
     <div className={classes.root}>
       <SectionHeader>Certifications</SectionHeader>
       <SectionBody>
-        <ul>
+        <BulletList>
           {Resume.certifications.map((p) => (
-            <li key={p.title}>
+            <Bullet key={p.title}>
               {p.title} -{" "}
-              <strong>
-                <a href={p.link} target="__blank" title={p.title}>
-                  <u>{p.issuer}</u>
-                </a>
-              </strong>
-            </li>
+              <Link href={p.link} underline external>
+                <strong>{p.issuer}</strong>
+              </Link>
+            </Bullet>
           ))}
-        </ul>
+        </BulletList>
       </SectionBody>
     </div>
   );

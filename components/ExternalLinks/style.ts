@@ -13,7 +13,7 @@ const style = (theme: Theme) =>
         fontSize: theme.toPt(18 / 8),
         marginRight: theme.spacing(1),
       },
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("xs")]: {
         position: "relative",
         transform: "none",
         top: 0,
