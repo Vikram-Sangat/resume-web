@@ -6,7 +6,7 @@ import ContactDetails from "../ContactDetails";
 import IntroHero from "../IntroHero";
 import ExternalLinks from "../ExternalLinks";
 
-type Props = WithStyles<typeof style> | Record<string, any>;
+interface Props extends WithStyles<typeof style>, Record<string, any> {}
 const Header: React.FC<Props> = ({ classes, global }) => {
   return (
     <div className={classes.root}>

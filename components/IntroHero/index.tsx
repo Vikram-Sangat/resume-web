@@ -6,7 +6,7 @@ import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import { Resume } from "../../constants/resume";
 
-type Props = WithStyles<typeof style> | Record<string, any>;
+interface Props extends WithStyles<typeof style>, Record<string, any> {}
 const Container: React.FC<Props> = ({ classes, global }) => {
   const profileImage = get(global, "profile.favicon.url", "") || "";
   return (
