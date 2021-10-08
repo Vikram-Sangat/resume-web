@@ -13,7 +13,6 @@ const yearsOfExperience = () => {
     start: CAREER_START_DATE,
     end: new Date(),
   });
-  console.log(interval);
   return difference;
 };
 export const calculateDuration = (data: any) => {

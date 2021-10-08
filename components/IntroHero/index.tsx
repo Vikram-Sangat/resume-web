@@ -8,8 +8,7 @@ import { Resume } from "../../constants/resume";
 
 type Props = WithStyles<typeof style> | Record<string, any>;
 const Container: React.FC<Props> = ({ classes, global }) => {
-  console.log("Global", global);
-  const profileImage = get(global, "favicon.url", "") || "";
+  const profileImage = get(global, "profile.favicon.url", "") || "";
   return (
     <div className={classes.root}>
       <div className={classes.img}>

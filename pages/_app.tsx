@@ -5,6 +5,7 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { NextPage } from "next";
+import { get } from "lodash-es";
 import theme from "../constants/theme";
 import "../styles/globals.css";
 import { fetchAPI, getStrapiURL } from "../lib/api";
@@ -24,11 +25,12 @@ const MyApp: NextPage<Props> = (props: any) => {
       }
     }
   }, []);
+  const favicon = get(global, "profile.favicon", {});
 
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href={getStrapiMedia(global.favicon)} />
+        <link rel="shortcut icon" href={getStrapiMedia(favicon)} />
         <title>My page</title>
         <meta
           name="viewport"
@@ -58,7 +60,7 @@ MyApp.getInitialProps = async (ctx: any) => {
   // Calls page's `getInitialProps` and fills `appProps.pageProps`
   const appProps = await App.getInitialProps(ctx);
   // Fetch global site settings from Strapi
-  const global = await fetchAPI("/global");
+  const global = await fetchAPI("/vikram-resume");
   // Pass the data to our page via props
   return { ...appProps, pageProps: { global } };
 };

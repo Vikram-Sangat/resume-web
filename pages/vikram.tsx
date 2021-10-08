@@ -8,8 +8,8 @@ import { getStrapiMedia } from "../lib/media";
 
 type Props = Record<string, any>;
 const Home: NextPage<Props> = ({ global }) => {
-  const profile = get(global, "profile", {});
-  const title = get(global, "title", "") || "";
+  const profile = get(global, "profile.profile_image", {});
+  const title = get(global, "profile.name", "") || "";
   const profileImage = getStrapiMedia(profile);
   return (
     <div>
