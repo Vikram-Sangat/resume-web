@@ -13,7 +13,7 @@ import Achivement from "../Achivement";
 import Education from "../Education";
 import Page from "../Page";
 
-type Props = WithStyles<typeof style> | Record<string, any>;
+interface Props extends WithStyles<typeof style>, Record<string, any> {}
 const Container: React.FC<Props> = ({ classes, global }) => {
   return (
     <div className={classes.root}>
