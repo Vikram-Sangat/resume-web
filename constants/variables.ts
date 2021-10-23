@@ -2,7 +2,7 @@ import { toIn, toPt } from "../utils/style";
 
 export const PROFILE = "/profile.jpeg";
 export const TITLE = "Vikram Sangat - Full stack developer";
-export const URL = "https://vikram-sangat.github.io/";
+export const URL = "https://vikram-resume.vercel.app/";
 export const SERVER_URL = "https://vikram-resume-26.herokuapp.com";
 export const GRAVATAR =
   "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=500";
@@ -20,3 +20,9 @@ export const PAGE_WIDTH = toIn(8.3 / 8);
 export const PAGE_HEIGHT = toIn(11.7 / 8);
 export const PAGE_PADDING_PT = toPt(3);
 export const PAGE_FONT_SIZE = toPt(1);
+export enum KEYMAPPING {
+  name = "profile.name",
+  title = "profile.title",
+  description = "profile.description",
+  favicon = "profile.favicon.url",
+}

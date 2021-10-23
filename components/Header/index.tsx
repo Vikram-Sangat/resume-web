@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { WithStyles } from "@material-ui/core";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import ContactDetails from "../ContactDetails";
 import IntroHero from "../IntroHero";
 import ExternalLinks from "../ExternalLinks";
+import { GlobalContext } from "../../constants/context";
 
 interface Props extends WithStyles<typeof style>, Record<string, any> {}
-const Header: React.FC<Props> = ({ classes, global }) => {
+const Header: React.FC<Props> = ({ classes }) => {
+  const global = useContext(GlobalContext);
   return (
     <div className={classes.root}>
       <IntroHero global={global} />

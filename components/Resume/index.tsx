@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { WithStyles } from "@material-ui/core";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
@@ -12,9 +12,11 @@ import Certification from "../Certification";
 import Achivement from "../Achivement";
 import Education from "../Education";
 import Page from "../Page";
+import GlobalContext from "../../constants/context";
 
 interface Props extends WithStyles<typeof style>, Record<string, any> {}
-const Container: React.FC<Props> = ({ classes, global }) => {
+const Container: React.FC<Props> = ({ classes }) => {
+  const global = useContext(GlobalContext);
   return (
     <div className={classes.root}>
       <Page>
