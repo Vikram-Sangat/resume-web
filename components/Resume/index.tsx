@@ -12,7 +12,7 @@ import Certification from "../Certification";
 import Achivement from "../Achivement";
 import Education from "../Education";
 import Page from "../Page";
-import GlobalContext from "../../constants/context";
+import { GlobalContext } from "../../constants/context";
 
 interface Props extends WithStyles<typeof style>, Record<string, any> {}
 const Container: React.FC<Props> = ({ classes }) => {
