@@ -25,4 +25,5 @@ export enum KEYMAPPING {
   title = "profile.title",
   description = "profile.description",
   favicon = "profile.favicon.url",
+  contact_details = "profile.contact_details",
 }

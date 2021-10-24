@@ -1,22 +1,45 @@
-import React from "react";
+import React, { useContext } from "react";
 import { WithStyles } from "@material-ui/core";
 import { GitHub, Language, LinkedIn } from "@material-ui/icons";
+import { get } from "lodash-es";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
-import { LINKEDIN_URL, URL, GITHUB_URL } from "../../constants/variables";
+import {
+  LINKEDIN_URL,
+  URL,
+  GITHUB_URL,
+  KEYMAPPING,
+} from "../../constants/variables";
 import Link from "../Link";
+import { GlobalContext } from "../../constants/context";
 
 type Props = WithStyles<typeof style>;
 const Container: React.FC<Props> = ({ classes }) => {
+  const global = useContext(GlobalContext);
+  const contactDetails = get(global, KEYMAPPING.contact_details, []) || [];
+  let linkedIn = {};
+  let github = {};
+  let website = {};
+  contactDetails.forEach((c) => {
+    if (c.type === "linkedIn") {
+      linkedIn = c;
+    }
+    if (c.type === "github") {
+      github = c;
+    }
+    if (c.type === "website") {
+      website = c;
+    }
+  });
   return (
     <span className={classes.root}>
-      <Link href={LINKEDIN_URL} target="__blank" title="Vikrams Profile">
+      <Link href={linkedIn.link} target="__blank" title="Vikrams Profile">
         <LinkedIn />
       </Link>
-      <Link href={GITHUB_URL} target="__blank" title="Vikram's Github">
+      <Link href={github.link} target="__blank" title="Vikram's Github">
         <GitHub />
       </Link>
-      <Link href={URL} target="__blank" title="Vikram's Website">
+      <Link href={website.link} target="__blank" title="Vikram's Website">
         <Language />
       </Link>
     </span>
