@@ -14,13 +14,13 @@ import { KEYMAPPING } from "../../constants/variables";
 type Props = WithStyles<typeof style>;
 const Overview: React.FC<Props> = ({ classes }) => {
   const global = useContext(GlobalContext);
-  const patents = get(global, KEYMAPPING.patents, "") || "";
+  const patents = get(global, KEYMAPPING.patents, []) || [];
   return (
     <div className={classes.root}>
       <SectionHeader>Patents</SectionHeader>
       <SectionBody>
         <BulletList>
-          {patents.map((p) => (
+          {patents.map((p: any) => (
             <Bullet key={p.link}>
               {p.title} -{" "}
               <Link href={p.url} underline external title={p.title}>

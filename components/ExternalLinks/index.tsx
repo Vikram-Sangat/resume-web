@@ -17,10 +17,10 @@ type Props = WithStyles<typeof style>;
 const Container: React.FC<Props> = ({ classes }) => {
   const global = useContext(GlobalContext);
   const contactDetails = get(global, KEYMAPPING.contact_details, []) || [];
-  let linkedIn = {};
-  let github = {};
-  let website = {};
-  contactDetails.forEach((c) => {
+  let linkedIn: Record<string, any> = {};
+  let github: Record<string, any> = {};
+  let website: Record<string, any> = {};
+  contactDetails.forEach((c: any) => {
     if (c.type === "linkedIn") {
       linkedIn = c;
     }

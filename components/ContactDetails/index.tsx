@@ -13,10 +13,10 @@ type Props = WithStyles<typeof style>;
 const Container: React.FC<Props> = ({ classes }) => {
   const global = useContext(GlobalContext);
   const contactDetails = get(global, KEYMAPPING.contact_details, []) || [];
-  let phone = {};
-  let email = {};
-  let location = {};
-  contactDetails.forEach((c) => {
+  let phone: Record<string, any> = {};
+  let email: Record<string, any> = {};
+  let location: Record<string, any> = {};
+  contactDetails.forEach((c: any) => {
     if (c.type === "phone") {
       phone = c;
     }
