@@ -4,7 +4,6 @@ import { get } from "lodash-es";
 import style from "./style";
 import { GlobalContext } from "../../constants/context";
 import { withStyleComponent } from "../../utils/style";
-import { Resume } from "../../constants/resume";
 import { KEYMAPPING } from "../../constants/variables";
 
 interface Props extends WithStyles<typeof style>, Record<string, any> {}
