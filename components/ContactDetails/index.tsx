@@ -33,9 +33,9 @@ const Container: React.FC<Props> = ({ classes }) => {
         <Phone className={classes.icon} /> {phone.details}
       </a>
       <span>
-        <Hidden smDown>
-          <span>-</span>{" "}
-        </Hidden>
+       
+          <span className={classes.dash}>-</span>{" "}
+        
         <u>
           <Link href={`${email.link}`} title="Contact Vikram">
             <Email className={classes.icon} /> {email.details}
@@ -43,9 +43,9 @@ const Container: React.FC<Props> = ({ classes }) => {
         </u>
       </span>
       <span>
-        <Hidden smDown>
-          <span>-</span>
-        </Hidden>
+       
+          <span className={classes.dash}>-</span>
+        
         <span>
           <LocationOn className={classes.icon} /> {location.details}
         </span>

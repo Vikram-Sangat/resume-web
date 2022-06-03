@@ -18,6 +18,11 @@ const style = (theme: Theme) =>
       fontSize: theme.toPt(12 / 8),
       marginBottom: -4,
     },
+    dash: {
+      [theme.breakpoints.down("sm")]: {
+        display: "none",
+      },
+    },
   });
 
 export default style;
