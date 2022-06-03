@@ -7,6 +7,6 @@ interface Props extends WithStyles<typeof style> {
   children: React.ReactNode;
 }
 const SectionBody: React.FC<Props> = ({ classes, children }) => {
-  return <span className={classes.root}>{children}</span>;
+  return <div className={classes.root}>{children}</div>;
 };
 export default withStyleComponent(style, "SectionBody")(SectionBody);

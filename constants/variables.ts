@@ -7,7 +7,7 @@ export const PROFILE = {
   description:
     "I am a full-stack web developer at DMart Labs. With over 5 years of experience in corporate and 2 years of experience in freelancing. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.",
   favicon: {
-    url: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326",
+    url: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=200",
   },
   contact_details: [
     { type: "phone", details: "+919503415652", link: "tel:+919503415652" },
@@ -16,7 +16,10 @@ export const PROFILE = {
       details: "v.sangat98@gmail.com",
       link: "mailto:v.sangat98@gmail.com",
     },
-    { type: "location", details: "Banglore, India" },
+    { type: "location", details: "Bangalore, India" },
+    { type: "linkedIn", link: "https://www.linkedin.com/in/vikram-sangat-4414854a/" },
+    { type: "github", link: "https://github.com/sangatDvikram" },
+    { type: "website", link: "https://vikram-resume.vercel.app/" },
   ],
 };
 export const TITLE = "Vikram Sangat - Full stack developer";

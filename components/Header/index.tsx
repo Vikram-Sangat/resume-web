@@ -11,7 +11,7 @@ interface Props extends WithStyles<typeof style>, Record<string, any> {}
 const Header: React.FC<Props> = ({ classes }) => {
   const global = useContext(GlobalContext);
   return (
-    <div className={classes.root}>
+    <div className={classes.headerRoot}>
       <IntroHero global={global} />
       <ContactDetails />
       <ExternalLinks />

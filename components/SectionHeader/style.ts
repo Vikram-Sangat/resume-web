@@ -2,7 +2,7 @@ import { createStyles, Theme } from "@material-ui/core";
 
 const style = (theme: Theme) =>
   createStyles({
-    root: {
+    sectionRoot: {
       fontSize: theme.toPt(14 / 8),
       fontWeight: 700,
       position: "relative",

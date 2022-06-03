@@ -2,7 +2,7 @@ import { createStyles, Theme } from "@material-ui/core";
 
 const style = (theme: Theme) =>
   createStyles({
-    root: {
+    headerRoot: {
       display: "block",
       position: "relative",
       minWidth: "100%",

@@ -7,6 +7,6 @@ interface Props extends WithStyles<typeof style> {
   children: React.ReactNode;
 }
 const SectionHeader: React.FC<Props> = ({ classes, children }) => {
-  return <span className={classes.root}>{children}</span>;
+  return <div className={classes.sectionRoot}>{children}</div>;
 };
 export default withStyleComponent(style, "SectionHeader")(SectionHeader);
