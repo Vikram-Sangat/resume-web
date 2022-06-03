@@ -4,7 +4,7 @@ import Head from "next/head";
 import App from "../app";
 import { Resume } from "../constants/resume";
 import { KEYMAPPING, URL } from "../constants/variables";
-import { fetchAPI } from "../lib/api";
+import { fetchAPI,fetchAPILocal } from "../lib/api";
 import { GlobalContext } from "../constants/context";
 import { getStrapiMedia } from "../lib/media";
 
@@ -48,10 +48,10 @@ const Home: NextPage<Props> = ({ global = {}, ...others }) => {
 
 export default Home;
 export async function getStaticProps() {
-  const global = await fetchAPI("/vikram-resume");
+  const global = await fetchAPILocal();
   return {
     props: {
-      global,
+      global:JSON.parse(global) ,
     }, // will be passed to the page component as props
   };
 }

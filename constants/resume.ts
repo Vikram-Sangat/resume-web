@@ -3,11 +3,12 @@ import { PROFILE } from "./variables";
 
 export const Resume = {
   name: "Vikram Sangat",
-  position: "Web full stack developer - React | Flutter | Python | Node.js",
+  position: "Senior UI Enginner - React | Flutter | Python | Node.js",
   description: `
   I am a full-stack web developer at DMart Labs. With over 5 years of experience in corporate and 2 years of experience in freelancing. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   profile: PROFILE,
   address: "Bangalore, India",
+  gravatar:"https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326",
   github: "https://github.com/Vikram-Sangat",
   email: "v.sangat98@gmail.com",
   linkedIn: "https://www.linkedin.com/in/vikram-sangat-4414854a/",
@@ -35,7 +36,7 @@ export const Resume = {
     },
     {
       link: "USD870129S1",
-      url: "https://patents.google.com/patent/GB2572361A",
+      url: "https://patents.google.com/patent/USD870129S1",
       title: "Display screen with transitional graphical user interface",
     },
   ],
@@ -70,10 +71,19 @@ export const Resume = {
   ],
   experience: [
     {
+      title: "Senior UI engineer",
+      company: "Visa",
+      duration: [new Date(2021, 11, 13), new Date()],
+      isCurrent: true,
+      area: "Bangalore, India",
+      techStack: ["React", "Redux", "Single-SPA", "RxJx"],
+      description: "",
+      tasks: ["Managed frontend team and all inhouse application development"],
+    },
+    {
       title: "Web full stack developer",
       company: "DMart Labs (Avenue Supermarkets Ltd)",
-      duration: [new Date(2019, 9, 1), new Date()],
-      isCurrent: true,
+      duration: [new Date(2019, 9, 1), new Date(2021, 10, 25)],
       area: "Bangalore, India",
       techStack: [
         "React",
