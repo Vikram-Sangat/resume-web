@@ -33,7 +33,7 @@ const Container: React.FC<Props> = ({ classes }) => {
   });
   return (
     <span className={classes.root}>
-      <Link href={linkedIn.link} target="__blank" title="Vikrams Profile">
+      <Link href={linkedIn.link} target="__blank" title="Vikram's Profile">
         <LinkedIn />
       </Link>
       <Link href={github.link} target="__blank" title="Vikram's Github">

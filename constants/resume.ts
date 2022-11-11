@@ -8,7 +8,7 @@ export const Resume = {
   I am a full-stack web developer at DMart Labs. With over 5 years of experience in corporate and 2 years of experience in freelancing. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   profile: PROFILE,
   address: "Bangalore, India",
-  gravatar:"https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326",
+  gravatar: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326",
   github: "https://github.com/Vikram-Sangat",
   email: "v.sangat98@gmail.com",
   linkedIn: "https://www.linkedin.com/in/vikram-sangat-4414854a/",
@@ -78,7 +78,11 @@ export const Resume = {
       area: "Bangalore, India",
       techStack: ["React", "Redux", "Single-SPA", "RxJx"],
       description: "",
-      tasks: ["Managed frontend team and all inhouse application development"],
+      tasks: [
+        "Worked on implementing micro frontends.",
+        "Worked on creating common UI components and integration with merchant products.",
+        "Integrated thirdparty api with UI.",
+      ],
     },
     {
       title: "Web full stack developer",
