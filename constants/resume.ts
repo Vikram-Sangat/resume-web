@@ -73,10 +73,9 @@ export const Resume = {
     {
       title: "Senior UI engineer",
       company: "Visa",
-      duration: [new Date(2021, 11, 13), new Date()],
-      isCurrent: true,
+      duration: [new Date(2021, 11, 13), new Date(2022, 10, 24)],
       area: "Bangalore, India",
-      techStack: ["React", "Redux", "Single-SPA", "RxJx"],
+      techStack: ["React", "Redux", "Single-SPA", "RxJx", "Material-UI"],
       description: "",
       tasks: [
         "Worked on implementing micro frontends.",
@@ -92,6 +91,7 @@ export const Resume = {
       techStack: [
         "React",
         "Redux",
+        "Node.js",
         "Single-SPA",
         "RxJx",
         "Flutter",

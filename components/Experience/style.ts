@@ -50,12 +50,12 @@ const style = (theme: Theme) =>
     },
     lastDetail: {
       "@media print": {
-        paddingTop: theme.toPt(4),
+        // paddingTop: theme.toPt(4),
       },
     },
     lastDuration: {
       "@media print": {
-        top: `calc(${theme.toPt(4)} - 4px)`,
+        // top: `calc(${theme.toPt(4)} - 4px)`,
       },
     },
   });
