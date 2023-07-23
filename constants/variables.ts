@@ -1,11 +1,11 @@
 import { toIn, toPt } from "../utils/style";
-
+import yearsOfExperience from "./date";
 export const PROFILE = {
   name: "Vikram Dilip Sangat",
   title:
     "Vikram Sangat - Senior UI Enginner - React | Python | Node.js | Flutter",
   description:
-    "I am a senior ui engineer at Visa. With over 6 years of experience in corporate and 2 years of experience in freelancing. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.",
+    `I am a senior ui engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   favicon: {
     url: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=200",
   },

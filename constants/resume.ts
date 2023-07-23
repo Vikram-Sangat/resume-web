@@ -5,7 +5,7 @@ export const Resume = {
   name: "Vikram Sangat",
   position: "Senior UI Enginner - React | Flutter | Python | Node.js",
   description: `
-  I am a senior ui engineer at Visa. With over 6 years of experience in corporate and 2 years of experience in freelancing. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
+  I am a senior ui engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   profile: PROFILE,
   address: "Bangalore, India",
   gravatar: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326",
@@ -71,16 +71,30 @@ export const Resume = {
   ],
   experience: [
     {
+      title: "Senior Software engineer",
+      company: "Tekion",
+      isCurrent:true,
+      duration: [new Date(2022, 11, 12), new Date(2022, 10, 24)],
+      area: "Bangalore, India",
+      techStack: ["React", "Redux", "Thunk", "Webpack 5"],
+      description: "",
+      tasks: [
+        "Managing DRP Enrollment modules development lifecycle.",
+        "Worked on creating application using monorepo pattern.",
+        "Worked on creating onboaring and preonboarding application flow for dealers to the DRP project..",
+      ],
+    },
+    {
       title: "Senior UI engineer",
       company: "Visa",
       duration: [new Date(2021, 11, 13), new Date(2022, 10, 24)],
       area: "Bangalore, India",
-      techStack: ["React", "Redux", "Single-SPA", "RxJx", "Material-UI"],
+      techStack: ["React", "Redux", "Single-SPA", "RxJs", "Material-UI"],
       description: "",
       tasks: [
-        "Worked on implementing micro frontends.",
-        "Worked on creating common UI components and integration with merchant products.",
-        "Integrated thirdparty api with UI.",
+        "Worked on implementing micro frontends within react application and used manifest to configure the same.",
+        "Worked on creating common UI components and integration with rapid seller onboaring platform.",
+        "Worked on Thirdparty api like ThreatMatrix, Giact and Experian which are related to user varification, Also integrated the same with UI",
       ],
     },
     {
@@ -93,7 +107,7 @@ export const Resume = {
         "Redux",
         "Node.js",
         "Single-SPA",
-        "RxJx",
+        "RxJs",
         "Flutter",
         "Material-UI",
       ],

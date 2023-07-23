@@ -5,14 +5,9 @@ import {
   lastDayOfMonth,
   intervalToDuration,
 } from "date-fns";
-import { CAREER_START_DATE } from "./variables";
-
+const CAREER_START_DATE = new Date(2016, 6, 1);
 const yearsOfExperience = () => {
-  const difference = differenceInYears(new Date(), CAREER_START_DATE);
-  const interval = intervalToDuration({
-    start: CAREER_START_DATE,
-    end: new Date(),
-  });
+  const difference = differenceInYears( new Date(), CAREER_START_DATE);
   return difference;
 };
 export const calculateDuration = (data: any) => {
