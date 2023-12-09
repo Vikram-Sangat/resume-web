@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Hidden, WithStyles } from "@material-ui/core";
-import { Email, Phone, LocationOn } from "@material-ui/icons";
+import { WithStyles } from "@mui/styles";
+import { Email, Phone, LocationOn } from "@mui/icons-material";
 import { get } from "lodash-es";
 import style from "./style";
 

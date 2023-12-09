@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { WithStyles } from "@material-ui/core";
-import { GitHub, Language, LinkedIn } from "@material-ui/icons";
+import { WithStyles } from "@mui/styles";
+import { GitHub, Language, LinkedIn } from "@mui/icons-material";
 import { get } from "lodash-es";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";

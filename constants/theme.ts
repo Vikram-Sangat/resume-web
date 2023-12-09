@@ -1,8 +1,8 @@
-import { createTheme } from "@material-ui/core/styles";
-import { red } from "@material-ui/core/colors";
+import { createTheme, Theme } from "@mui/material";
+import { red } from "@mui/material/colors";
 import { ToPT, toIn, toPt } from "../utils/style";
 
-declare module "@material-ui/core/styles/createTheme" {
+declare module "@mui/material" {
   interface Theme {
     toPt: ToPT;
     toIn: ToPT;

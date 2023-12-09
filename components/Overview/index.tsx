@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { WithStyles } from "@material-ui/core";
+import { WithStyles } from "@mui/styles";
 import { get } from "lodash-es";
 import style from "./style";
 import SectionHeader from "../SectionHeader";

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { WithStyles } from "@material-ui/core";
+import { WithStyles } from "@mui/styles";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import ContactDetails from "../ContactDetails";

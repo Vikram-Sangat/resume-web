@@ -1,4 +1,5 @@
-import { createStyles, Theme } from "@material-ui/core";
+import { createStyles } from "@mui/styles";
+import { Theme } from "@mui/material";
 import {
   PAGE_HEIGHT,
   PAGE_PADDING_PT,

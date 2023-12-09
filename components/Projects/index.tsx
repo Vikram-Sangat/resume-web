@@ -1,7 +1,7 @@
 import React from "react";
-import { WithStyles } from "@material-ui/core";
+import { WithStyles } from "@mui/styles";
 
-import { Launch } from "@material-ui/icons";
+import { Launch } from "@mui/icons-material";
 import style from "./style";
 import { withStyleComponent } from "../../utils/style";
 import SectionHeader from "../SectionHeader";

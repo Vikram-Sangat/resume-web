@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { Typography, WithStyles } from "@material-ui/core";
+import { WithStyles } from "@mui/styles";
+import { Typography } from "@mui/material";
 import { get } from "lodash-es";
 import style from "./style";
 import { GlobalContext } from "../../constants/context";

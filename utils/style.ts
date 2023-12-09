@@ -1,4 +1,4 @@
-import { withStyles } from "@material-ui/core";
+import { withStyles } from "@mui/styles";
 
 export const withStyleComponent = (style: any, name: string) => {
   return withStyles(style, { name });
