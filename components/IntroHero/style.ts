@@ -2,7 +2,12 @@ import { createStyles, Theme } from "@material-ui/core";
 
 const style = (theme: Theme) =>
   createStyles({
-    root: {},
+    root: {
+      [theme.breakpoints.down("xs")]: {
+        display: "flex",
+        flexDirection: "row-reverse",
+      },
+    },
     title: {
       fontSize: theme.toPt(2.5),
       position: "relative",
@@ -13,8 +18,10 @@ const style = (theme: Theme) =>
       },
     },
     img: {
-      position: "absolute",
-      left: 0,
+      [theme.breakpoints.up("xs")]: {
+        position: "absolute",
+        left: 0,
+      },
       width: 100,
       "& img": {
         objectFit: "contain",
@@ -28,6 +35,7 @@ const style = (theme: Theme) =>
       },
       [theme.breakpoints.down("xs")]: {
         right: 0,
+        position: "relative",
         left: "unset",
       },
     },

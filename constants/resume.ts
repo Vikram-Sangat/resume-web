@@ -3,13 +3,13 @@ import { PROFILE } from "./variables";
 
 export const Resume = {
   name: "Vikram Sangat",
-  position: "Senior UI Enginner - React | Flutter | Python | Node.js",
+  position: "Senior Software Enginner - React | Flutter | Python | Node.js",
   description: `
-  I am a senior ui engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
+  I am a senior software engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   profile: PROFILE,
   address: "Bangalore, India",
   gravatar: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326",
-  github: "https://github.com/Vikram-Sangat",
+  github: "https://github.com/sangatDVikram",
   email: "v.sangat98@gmail.com",
   linkedIn: "https://www.linkedin.com/in/vikram-sangat-4414854a/",
   mobile: "+91-9503415652",
@@ -73,15 +73,16 @@ export const Resume = {
     {
       title: "Senior Software engineer",
       company: "Tekion",
-      isCurrent:true,
+      isCurrent: true,
       duration: [new Date(2022, 11, 12), new Date(2022, 10, 24)],
       area: "Bangalore, India",
       techStack: ["React", "Redux", "Thunk", "Webpack 5"],
       description: "",
       tasks: [
-        "Managing DRP Enrollment modules development lifecycle.",
+        "Leading team of frontend engineers.",
+        "Managing DRP Onboaring modules development lifecycle.",
         "Worked on creating application using monorepo pattern.",
-        "Worked on creating onboaring and preonboarding application flow for dealers to the DRP project..",
+        "Worked on creating onboaring and preonboarding application flow for dealers and oem",
       ],
     },
     {
@@ -92,6 +93,7 @@ export const Resume = {
       techStack: ["React", "Redux", "Single-SPA", "RxJs", "Material-UI"],
       description: "",
       tasks: [
+        "Worked on Merchant onboarding application and lead UI development team.",
         "Worked on implementing micro frontends within react application and used manifest to configure the same.",
         "Worked on creating common UI components and integration with rapid seller onboaring platform.",
         "Worked on Thirdparty api like ThreatMatrix, Giact and Experian which are related to user varification, Also integrated the same with UI",

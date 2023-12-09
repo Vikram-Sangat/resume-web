@@ -3,14 +3,13 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import App from "../app";
 import { Resume } from "../constants/resume";
-import { URL } from "../constants/variables";
-import { getStrapiMedia } from "../lib/media";
+import { GRAVATAR, URL } from "../constants/variables";
 
 type Props = Record<string, any>;
 const Home: NextPage<Props> = ({ global }) => {
   const profile = get(global, "profile.profile_image", {});
   const title = get(global, "profile.name", "") || "";
-  const profileImage = getStrapiMedia(profile);
+  const profileImage = GRAVATAR;
   return (
     <div>
       <Head>

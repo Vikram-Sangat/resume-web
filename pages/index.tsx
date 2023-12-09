@@ -2,11 +2,9 @@ import { get } from "lodash-es";
 import type { NextPage } from "next";
 import Head from "next/head";
 import App from "../app";
-import { Resume } from "../constants/resume";
-import { KEYMAPPING, URL } from "../constants/variables";
-import { fetchAPI,fetchAPILocal } from "../lib/api";
+import { GRAVATAR, KEYMAPPING, URL } from "../constants/variables";
+import { fetchAPILocal } from "../lib/api";
 import { GlobalContext } from "../constants/context";
-import { getStrapiMedia } from "../lib/media";
 
 type Props = Record<string, any>;
 const Home: NextPage<Props> = ({ global = {}, ...others }) => {
@@ -14,7 +12,7 @@ const Home: NextPage<Props> = ({ global = {}, ...others }) => {
   const title = get(global, KEYMAPPING.title, "") || "";
   const name = get(global, KEYMAPPING.name, "") || "";
   const description = get(global, KEYMAPPING.description, "") || "";
-  const profileImage = getStrapiMedia(profile);
+  const profileImage = GRAVATAR;
   const finalTittle = `${name} - ${title}`;
   return (
     <div>

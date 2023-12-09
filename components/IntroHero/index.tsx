@@ -14,7 +14,7 @@ const Container: React.FC<Props> = ({ classes }) => {
   return (
     <div className={classes.root}>
       <div className={classes.img}>
-        <img src={profileImage} alt={name} width={200} />{" "}
+        <img src={profileImage} alt={name} width={200} />
       </div>
       <Typography className={classes.title}>{name}</Typography>
     </div>
