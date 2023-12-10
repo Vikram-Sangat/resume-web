@@ -3,7 +3,7 @@ import yearsOfExperience from "./date";
 export const PROFILE = {
   name: "Vikram Dilip Sangat",
   title:
-    "Vikram Sangat - Senior Software Enginner - React | Python | Node.js | Flutter",
+    "Senior Software Enginner - React | Python | Node.js | Flutter",
   description:
     `I am a senior software engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   favicon: {

@@ -5,7 +5,7 @@ const style = (theme: Theme) =>
   createStyles({
     root: {},
     body: {
-      [theme.breakpoints.down("xs")]: {
+      [theme.breakpoints.down("sm")]: {
         justifyContent: "flex-start",
         display: "flex",
         flexWrap: "wrap",
@@ -15,7 +15,7 @@ const style = (theme: Theme) =>
       width: "25%",
       display: "inline-block",
       paddingRight: theme.spacing(1),
-      [theme.breakpoints.down("xs")]: {
+      [theme.breakpoints.down("sm")]: {
         width: "50%",
       },
       "& ul": {
@@ -27,7 +27,7 @@ const style = (theme: Theme) =>
         margin: 0,
         float: "left",
         marginRight: theme.spacing(0.5),
-        [theme.breakpoints.down("xs")]: {
+        [theme.breakpoints.down("sm")]: {
           float: "unset",
         },
       },

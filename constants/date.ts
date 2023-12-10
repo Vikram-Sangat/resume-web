@@ -7,7 +7,7 @@ import {
 } from "date-fns";
 const CAREER_START_DATE = new Date(2016, 6, 1);
 const yearsOfExperience = () => {
-  const difference = differenceInYears( new Date(), CAREER_START_DATE);
+  const difference = differenceInYears(new Date(), CAREER_START_DATE);
   return difference;
 };
 export const calculateDuration = (data: any) => {

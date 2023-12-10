@@ -18,6 +18,19 @@ const style = (theme: Theme) =>
         textAlign: "left",
       },
     },
+    img: {
+      width: 100,
+      "& img": {
+        objectFit: "contain",
+        width: 100,
+        [theme.breakpoints.up("sm")]: {
+          width: 50,
+        },
+      },
+      "@media print": {
+        display: "none",
+      },
+    },
   });
 
 export default style;

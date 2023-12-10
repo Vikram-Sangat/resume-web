@@ -9,7 +9,7 @@ const style = (theme: Theme) =>
         marginRight: theme.toPt(1),
         fontSize: theme.toPt(10 / 8),
       },
-      [theme.breakpoints.down("xs")]: {
+      [theme.breakpoints.down("sm")]: {
         textAlign: "left",
         display: "flex",
         flexDirection: "column",

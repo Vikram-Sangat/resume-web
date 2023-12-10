@@ -6,15 +6,21 @@ import ContactDetails from "../ContactDetails";
 import IntroHero from "../IntroHero";
 import ExternalLinks from "../ExternalLinks";
 import { GlobalContext } from "../../constants/context";
+import ProfileImage from "../ProfileImage";
 
 interface Props extends WithStyles<typeof style>, Record<string, any> {}
 const Header: React.FC<Props> = ({ classes }) => {
   const global = useContext(GlobalContext);
   return (
     <div className={classes.headerRoot}>
-      <IntroHero global={global} />
-      <ContactDetails />
-      <ExternalLinks />
+      <div>
+        <ProfileImage></ProfileImage>
+      </div>
+      <div style={{ flexGrow: 1 }}>
+        <IntroHero global={global} />
+        <ContactDetails />
+        <ExternalLinks />
+      </div>
     </div>
   );
 };

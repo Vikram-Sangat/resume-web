@@ -8,5 +8,10 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": true
     }
+  },
+  "[typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
   }
 }
