@@ -1,5 +1,10 @@
 import { toIn, toPt } from "../utils/style";
 import yearsOfExperience from "./date";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/vikram-sangat-4414854a/"
+export const URL = "https://sangatdvikram.github.io/"
+export const GITHUB_URL = "https://github.com/sangatDvikram"
+export const GRAVATAR =
+  "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326";
 export const PROFILE = {
   name: "Vikram Dilip Sangat",
   title:
@@ -7,7 +12,7 @@ export const PROFILE = {
   description:
     `I am a senior software engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   favicon: {
-    url: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=200",
+    url: `${GRAVATAR}?s=500`,
   },
   contact_details: [
     { type: "phone", details: "+919503415652", link: "tel:+919503415652" },
@@ -17,20 +22,12 @@ export const PROFILE = {
       link: "mailto:v.sangat98@gmail.com",
     },
     { type: "location", details: "Bangalore, India" },
-    { type: "linkedIn", link: "https://www.linkedin.com/in/vikram-sangat-4414854a/" },
-    { type: "github", link: "https://github.com/sangatDvikram" },
-    { type: "website", link: "https://vikram-resume.vercel.app/" },
+    { type: "linkedIn", link: LINKEDIN_URL },
+    { type: "github", link: GITHUB_URL },
+    { type: "website", link: URL},
   ],
 };
-export const TITLE = "Vikram Sangat - Full stack developer";
-export const URL = "https://vikram-resume.vercel.app/";
-export const SERVER_URL = "https://vikram-resume-26.herokuapp.com";
-export const GRAVATAR =
-  "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326?s=500";
-export const LINKEDIN_URL =
-  "https://www.linkedin.com/in/vikram-sangat-4414854a/";
-export const BITBUCKET_URL = "https://bitbucket.org/vikram-sangat/";
-export const GITHUB_URL = "https://github.com/Vikram-Sangat";
+
 export const CAREER_START_DATE = new Date(2016, 6, 1);
 export const PRIMARY_COLOR = "#35baf6";
 export const PRIMARY_COLOR_LIGHT = "#b3e5fc";

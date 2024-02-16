@@ -1,3 +1,4 @@
+import { gravatar } from "../utils/gravatar";
 import yearsOfExperience from "./date";
 import { PROFILE } from "./variables";
 
@@ -8,7 +9,7 @@ export const Resume = {
   I am a senior software engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   profile: PROFILE,
   address: "Bangalore, India",
-  gravatar: "https://www.gravatar.com/avatar/7384e1fc27b2c82cc01ab728f681f326",
+  gravatar: gravatar(200),
   github: "https://github.com/sangatDVikram",
   email: "v.sangat98@gmail.com",
   linkedIn: "https://www.linkedin.com/in/vikram-sangat-4414854a/",
