@@ -10,7 +10,7 @@ export type ToPT =
   | ((top: number, right?: number, bottom?: number, left?: number) => string);
 
 const convert = (number = 0) => {
-  return `${number * 8}pt`;
+  return `${number * 4.5}pt`;
 };
 
 const convertIn = (number = 0) => {

@@ -1,6 +1,7 @@
 import { toIn, toPt } from "../utils/style";
 import yearsOfExperience from "./date";
-export const LINKEDIN_URL = "https://www.linkedin.com/in/vikram-sangat-4414854a/"
+export const CAREER_START_DATE = new Date(2016, 6, 1);
+export const LINKEDIN_URL = "https://www.linkedin.com/in/sangatdvikram/"
 export const URL = "https://sangatdvikram.github.io/"
 export const GITHUB_URL = "https://github.com/sangatDvikram"
 export const GRAVATAR =
@@ -10,7 +11,7 @@ export const PROFILE = {
   title:
     "Senior Software Enginner - React | Python | Node.js | Flutter",
   description:
-    `I am a senior software engineer with over ${yearsOfExperience()} years of experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
+    `I am a senior software engineer with over ${yearsOfExperience()} of experience and ${yearsOfExperience(new Date(2012,2,1),CAREER_START_DATE)} of freelancing experience. My technical work spans front-end architecture, hybrid mobile application development, and backend services. I also actively manage the front-end team's software development process. In the past, I have worked on web applications and data processing pipelines. I am keen to explore interesting roles in broad areas of web and backend development.`,
   favicon: {
     url: `${GRAVATAR}?s=500`,
   },
@@ -28,7 +29,6 @@ export const PROFILE = {
   ],
 };
 
-export const CAREER_START_DATE = new Date(2016, 6, 1);
 export const PRIMARY_COLOR = "#35baf6";
 export const PRIMARY_COLOR_LIGHT = "#b3e5fc";
 export const PRIMARY_COLOR_DARK = "#03a9f4";

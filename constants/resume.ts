@@ -12,7 +12,7 @@ export const Resume = {
   gravatar: gravatar(200),
   github: "https://github.com/sangatDVikram",
   email: "v.sangat98@gmail.com",
-  linkedIn: "https://www.linkedin.com/in/vikram-sangat-4414854a/",
+  linkedIn: "https://www.linkedin.com/in/sangatdvikram/",
   mobile: "+91-9503415652",
   languages: ["Python", "Javascript", "HTML", "CSS", "Dart", "PHP", "C#"],
   frameworks: [
